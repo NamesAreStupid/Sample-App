@@ -30,15 +30,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'win32console'
-
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'sqlite3'
-
 end
 
 group :development do
@@ -54,6 +49,10 @@ group :test do
 	gem 'minitest-reporters'
 	gem 'guard'
 	gem 'guard-minitest'
+
+  gem 'win32console'
+
+  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
 
 group :production do
