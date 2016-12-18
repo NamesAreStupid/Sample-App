@@ -50,7 +50,7 @@ group :test do
 	gem 'guard'
 	gem 'guard-minitest'
 
-  gem 'win32console'
+  gem 'win32console' if Gem.win_platform?
 
   gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
