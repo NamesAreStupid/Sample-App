@@ -33,11 +33,26 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
+  gem 'listen'
+  gem 'spring'
+  gem 'spring-watcher-listen'
+end
+
+group :test do
+	gem 'rails-controller-testing'
+	gem 'minitest-reporters'
+	gem 'guard'
+	gem 'guard-minitest'
+end
+
+gem :production do
+	gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
