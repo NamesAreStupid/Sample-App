@@ -22,3 +22,8 @@
 
 # Ignore Spring files.
 /spring/*.pid
+bin/bundle
+bin/rails
+bin/rake
+bin/setup
+bin/update
