@@ -28,3 +28,4 @@ bin/rake
 bin/setup
 bin/update
 db/schema.rb
+Gemfile.lock
