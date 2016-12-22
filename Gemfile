@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
-gem 'bcrypt', '~>3.1.11'  #, '3.1.11-x64-mingw32'
+gem 'bcrypt', '~>3.1.11' #, '3.1.11-x64-mingw32'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -33,12 +33,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-
 gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  #gem 'byebug', platform: :mri
+  gem 'byebug', '~> 9.0', '>= 9.0.6'
   gem 'sqlite3'
 end
 
